@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Roasted Bean | Café</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">The Roasted Bean</a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Welcome to <span class="highlight">The Roasted Bean</span></h1>
+        <p>Specialty coffee, fresh pastries, and a cozy spot to slow down—right in your neighborhood.</p>
+        <a href="#menu" class="btn btn-primary">See Our Menu</a>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h2 class="section-title">About Us</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p class="lead">Your neighborhood café where every cup is brewed with care.</p>
+            <p>The Roasted Bean started with a simple idea: a welcoming place where friends meet, freelancers find their corner, and everyone leaves with a good cup of coffee. We source our beans from trusted roasters and bake our pastries fresh daily. Stop by for a flat white, stay for the vibe.</p>
+          </div>
+          <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&q=80" alt="Cozy café interior at The Roasted Bean" class="about-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="section services">
+      <div class="container">
+        <h2 class="section-title">What We Offer</h2>
+        <p class="section-subtitle">Coffee, bites, and a place to unwind.</p>
+        <div class="cards cards-menu">
+          <article class="card card-with-img">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&q=80" alt="Specialty coffee" class="card-img">
+            <div class="card-body">
+              <div class="card-icon">☕</div>
+              <h3>Specialty Coffee</h3>
+              <p>Single-origin and small-batch beans. A cup you’ll remember.</p>
+              <ul class="menu-items">
+                <li>Espresso · Double espresso · Americano</li>
+                <li>Latte · Cappuccino · Flat white · Cortado</li>
+                <li>Mocha · Vanilla latte · Caramel macchiato</li>
+                <li>Cold brew · Iced latte · Iced Americano</li>
+                <li>Pour-over · French press · AeroPress</li>
+                <li>Affogato · Seasonal specials · Decaf available</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card card-with-img">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&q=80" alt="Fresh pastries and croissants" class="card-img" loading="eager">
+            <div class="card-body">
+              <div class="card-icon">🥐</div>
+              <h3>Fresh Pastries & Bites</h3>
+              <p>Baked fresh daily in our kitchen.</p>
+              <ul class="menu-items">
+                <li>Butter croissant · Chocolate · Almond croissant</li>
+                <li>Blueberry muffin · Banana bread · Lemon loaf</li>
+                <li>Cinnamon roll · Danish · Scones (plain, fruit)</li>
+                <li>Cookies · Brownies · Cake slices (daily rotation)</li>
+                <li>Avocado toast · Smashed pea toast · Hummus toast</li>
+                <li>Grilled cheese · Tomato soup · Soup of the day</li>
+                <li>Quiche · Salad bowl · Wraps</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card card-with-img">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&q=80" alt="Fresh bakery bread and goods" class="card-img">
+            <div class="card-body">
+              <div class="card-icon">🍞</div>
+              <h3>Bakery</h3>
+              <p>House-made breads and sweet bakes, fresh every morning.</p>
+              <ul class="menu-items">
+                <li>Sourdough loaf · Baguette · Ciabatta</li>
+                <li>Whole wheat · Multigrain · Olive bread</li>
+                <li>Cinnamon roll · Sticky bun · Pecan roll</li>
+                <li>Donuts (glazed, chocolate, cinnamon sugar)</li>
+                <li>Éclairs · Cream puffs · Profiteroles</li>
+                <li>Apple strudel · Fruit tart · Lemon tart</li>
+                <li>Pound cake · Coffee cake · Bundt slice</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card card-with-img">
+            <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&q=80" alt="Creamy milkshakes" class="card-img">
+            <div class="card-body">
+              <div class="card-icon">🥤</div>
+              <h3>Shakes</h3>
+              <p>Thick, creamy shakes made with real ice cream.</p>
+              <ul class="menu-items">
+                <li>Classic vanilla · Chocolate · Strawberry</li>
+                <li>Cookies & cream · Salted caramel</li>
+                <li>Peanut butter · Nutella · Oreo</li>
+                <li>Coffee shake · Mocha shake · Matcha shake</li>
+                <li>Banana · Mango · Berry blast</li>
+                <li>Add-ins: whipped cream, extra shot, cookie</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card card-with-img">
+            <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&q=80" alt="Cold drinks" class="card-img">
+            <div class="card-body">
+              <div class="card-icon">🧊</div>
+              <h3>Cold Drinks & Smoothies</h3>
+              <p>Refreshing sips for warm days.</p>
+              <ul class="menu-items">
+                <li>Iced coffee · Iced Americano · Iced latte</li>
+                <li>Iced tea (peach, lemon, passion fruit)</li>
+                <li>Matcha latte (hot or iced) · Iced matcha</li>
+                <li>House lemonade · Strawberry lemonade</li>
+                <li>Berry smoothie · Mango · Green · Tropical smoothie</li>
+                <li>Fresh OJ · Apple juice · Sparkling water</li>
+                <li>Kombucha · Cold brew tonic · Nitro cold brew</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card card-with-img">
+            <img src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=400&q=80" alt="Tea" class="card-img">
+            <div class="card-body">
+              <div class="card-icon">🍵</div>
+              <h3>Tea & More</h3>
+              <p>Loose-leaf teas and comforting options.</p>
+              <ul class="menu-items">
+                <li>Earl Grey · English Breakfast · Green tea</li>
+                <li>Chai (hot or iced) · Dirty chai</li>
+                <li>Peppermint · Chamomile · Ginger turmeric</li>
+                <li>Jasmine · Oolong · Herbal blends</li>
+                <li>Hot chocolate · White hot chocolate · Steamed milk</li>
+                <li>Oat · Almond · Soy · Coconut milk (any drink)</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="facilities" class="section facilities">
+      <div class="container">
+        <h2 class="section-title">What We Provide</h2>
+        <p class="section-subtitle">Everything you need to work, relax, or meet—all under one roof.</p>
+        <div class="facilities-wrap">
+          <div class="facilities-image">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" alt="Cozy café space with seating and workspace" loading="lazy">
+          </div>
+          <div class="facilities-grid">
+            <div class="facility-item">
+              <span class="facility-icon">📶</span>
+              <h3>Free Wi‑Fi</h3>
+              <p>Fast, reliable internet so you can work or browse without a hitch.</p>
+            </div>
+            <div class="facility-item">
+              <span class="facility-icon">🔌</span>
+              <h3>Power Outlets</h3>
+              <p>Plenty of outlets at tables and along the walls. Stay charged.</p>
+            </div>
+            <div class="facility-item">
+              <span class="facility-icon">🪑</span>
+              <h3>Comfortable Seating</h3>
+              <p>Couches, armchairs, window seats, and tables for every group size.</p>
+            </div>
+            <div class="facility-item">
+              <span class="facility-icon">🅿️</span>
+              <h3>Parking</h3>
+              <p>Easy street parking and dedicated spots nearby for guests.</p>
+            </div>
+            <div class="facility-item">
+              <span class="facility-icon">♿</span>
+              <h3>Wheelchair Accessible</h3>
+              <p>Ramp access, wide aisles, and an accessible restroom.</p>
+            </div>
+            <div class="facility-item">
+              <span class="facility-icon">🤫</span>
+              <h3>Quiet Zones</h3>
+              <p>Designated quieter areas for focus work and reading.</p>
+            </div>
+            <div class="facility-item">
+              <span class="facility-icon">👥</span>
+              <h3>Group Bookings</h3>
+              <p>Reserve a table or corner for meetings, study groups, or small events.</p>
+            </div>
+            <div class="facility-item">
+              <span class="facility-icon">🎵</span>
+              <h3>Events & Live Music</h3>
+              <p>Open mic nights, acoustic sessions, and community events.</p>
+            </div>
+            <div class="facility-item">
+              <span class="facility-icon">🥡</span>
+              <h3>Takeaway & Orders</h3>
+              <p>Grab your order to go or call ahead for pickup. Delivery options available.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hours">
+      <div class="container">
+        <h2 class="section-title">Hours & Location</h2>
+        <div class="hours-grid">
+          <div class="hours-card">
+            <h3>Opening Hours</h3>
+            <ul>
+              <li>Mon – Fri: 7:00 AM – 7:00 PM</li>
+              <li>Saturday: 8:00 AM – 6:00 PM</li>
+              <li>Sunday: 8:00 AM – 4:00 PM</li>
+            </ul>
+          </div>
+          <div class="hours-card">
+            <h3>Find Us</h3>
+            <p>123 Main Street<br>Your City, State 12345</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-subtitle">Questions, catering inquiries, or just saying hi—we’d love to hear from you.</p>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p><strong>Phone:</strong> <a href="tel:+1234567890">(123) 456-7890</a></p>
+            <p><strong>Email:</strong> <a href="mailto:hello@theroastedbean.com">hello@theroastedbean.com</a></p>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> The Roasted Bean. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
