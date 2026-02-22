@@ -22,11 +22,33 @@
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#menu">Menu</a>
+        <a href="#order">Order</a>
         <a href="#facilities">Facilities</a>
         <a href="#contact">Contact</a>
       </nav>
+      <button class="cart-trigger" id="cart-trigger" aria-label="Open cart">
+        <span class="cart-icon">🛒</span>
+        <span class="cart-count" id="cart-count">0</span>
+      </button>
     </div>
   </header>
+
+  <!-- Cart drawer -->
+  <div class="cart-overlay" id="cart-overlay" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart">
+    <div class="cart-drawer-header">
+      <h2>Your Order</h2>
+      <button class="cart-close" id="cart-close" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-drawer-body">
+      <div class="cart-empty" id="cart-empty">Your cart is empty. Add items from the Order section!</div>
+      <ul class="cart-list" id="cart-list"></ul>
+    </div>
+    <div class="cart-drawer-footer">
+      <div class="cart-total"><strong>Total:</strong> $<span id="cart-total">0.00</span></div>
+      <button class="btn btn-primary btn-cart-order" id="cart-place-order">Place order</button>
+    </div>
+  </aside>
 
   <main>
     <section id="home" class="hero">
@@ -157,6 +179,75 @@
               </ul>
             </div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="order" class="section order-section">
+      <div class="container">
+        <h2 class="section-title">Order Online</h2>
+        <p class="section-subtitle">Add items to your cart and place your order for pickup or delivery.</p>
+        <div class="order-grid" id="order-grid">
+          <div class="order-item" data-id="1" data-name="Espresso" data-price="2.50">
+            <span class="order-item-name">Espresso</span>
+            <span class="order-item-price">$2.50</span>
+            <button type="button" class="btn btn-add" data-add-cart>Add to cart</button>
+          </div>
+          <div class="order-item" data-id="2" data-name="Latte" data-price="4.00">
+            <span class="order-item-name">Latte</span>
+            <span class="order-item-price">$4.00</span>
+            <button type="button" class="btn btn-add" data-add-cart>Add to cart</button>
+          </div>
+          <div class="order-item" data-id="3" data-name="Cappuccino" data-price="4.00">
+            <span class="order-item-name">Cappuccino</span>
+            <span class="order-item-price">$4.00</span>
+            <button type="button" class="btn btn-add" data-add-cart>Add to cart</button>
+          </div>
+          <div class="order-item" data-id="4" data-name="Cold Brew" data-price="4.50">
+            <span class="order-item-name">Cold Brew</span>
+            <span class="order-item-price">$4.50</span>
+            <button type="button" class="btn btn-add" data-add-cart>Add to cart</button>
+          </div>
+          <div class="order-item" data-id="5" data-name="Butter Croissant" data-price="3.50">
+            <span class="order-item-name">Butter Croissant</span>
+            <span class="order-item-price">$3.50</span>
+            <button type="button" class="btn btn-add" data-add-cart>Add to cart</button>
+          </div>
+          <div class="order-item" data-id="6" data-name="Blueberry Muffin" data-price="3.25">
+            <span class="order-item-name">Blueberry Muffin</span>
+            <span class="order-item-price">$3.25</span>
+            <button type="button" class="btn btn-add" data-add-cart>Add to cart</button>
+          </div>
+          <div class="order-item" data-id="7" data-name="Avocado Toast" data-price="8.00">
+            <span class="order-item-name">Avocado Toast</span>
+            <span class="order-item-price">$8.00</span>
+            <button type="button" class="btn btn-add" data-add-cart>Add to cart</button>
+          </div>
+          <div class="order-item" data-id="8" data-name="Chocolate Shake" data-price="5.50">
+            <span class="order-item-name">Chocolate Shake</span>
+            <span class="order-item-price">$5.50</span>
+            <button type="button" class="btn btn-add" data-add-cart>Add to cart</button>
+          </div>
+          <div class="order-item" data-id="9" data-name="Iced Latte" data-price="4.50">
+            <span class="order-item-name">Iced Latte</span>
+            <span class="order-item-price">$4.50</span>
+            <button type="button" class="btn btn-add" data-add-cart>Add to cart</button>
+          </div>
+          <div class="order-item" data-id="10" data-name="Cinnamon Roll" data-price="4.00">
+            <span class="order-item-name">Cinnamon Roll</span>
+            <span class="order-item-price">$4.00</span>
+            <button type="button" class="btn btn-add" data-add-cart>Add to cart</button>
+          </div>
+          <div class="order-item" data-id="11" data-name="Sourdough Loaf" data-price="6.00">
+            <span class="order-item-name">Sourdough Loaf</span>
+            <span class="order-item-price">$6.00</span>
+            <button type="button" class="btn btn-add" data-add-cart>Add to cart</button>
+          </div>
+          <div class="order-item" data-id="12" data-name="Chai Latte" data-price="4.25">
+            <span class="order-item-name">Chai Latte</span>
+            <span class="order-item-price">$4.25</span>
+            <button type="button" class="btn btn-add" data-add-cart>Add to cart</button>
+          </div>
         </div>
       </div>
     </section>
